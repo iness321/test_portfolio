@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="intro-container">
+        <span class="intro-text">Mon parcours</span>
+        <h1>MON CV</h1>
+        <p style="color: var(--rose-medium); font-size: 1.1rem; max-width: 600px; margin: 20px auto;">
+            Cliquez ci-dessous pour télécharger mon CV au format PDF.
+        </p>
+    </div>
+
+    <div class="bubble-container">
+        <div class="bubble-container">
+    <a href="{{ asset('doc/Cv.pdf') }}" target="_blank" class="bubble" download>
+        CV disponible
+    </a>
+</div>
+
+    </div>
+{% endblock %}

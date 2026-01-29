@@ -1,0 +1,129 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes Compétences RT1 - Inass{% endblock %}
+
+{% block body %}
+    <style>
+        .table-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 30px;
+            border: 1px solid rgba(243, 213, 217, 0.2);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+            font-weight: 300;
+        }
+        th {
+            text-align: left;
+            padding: 20px;
+            color: var(--rose-light);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            border-bottom: 2px solid var(--rose-vif);
+        }
+        td {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.9rem;
+            vertical-align: middle;
+        }
+        .rt-header {
+            background: rgba(243, 213, 217, 0.1);
+            color: var(--rose-vif);
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .badge-ac {
+            background: var(--rose-vif);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn-preuve {
+            font-size: 0.75rem;
+            text-decoration: none;
+            color: var(--rose-light);
+            border: 1px solid var(--rose-light);
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        .btn-preuve:hover {
+            background: var(--rose-light);
+            color: black;
+            box-shadow: 0 0 15px var(--rose-light);
+        }
+        .stars {
+            color: #FFD700;
+            letter-spacing: 2px;
+        }
+    </style>
+
+    <div class="intro-container">
+        <span class="intro-text">E-Portfolio / SAE 1.04</span>
+        <h1>COMPÉTENCE RT1</h1>
+        <p style="color: var(--rose-medium); margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto;">
+            <strong>Administrer les réseaux et l'Internet</strong> : Focus sur l'installation, la configuration et la maintenance des infrastructures réseaux.
+        </p>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Code AC</th>
+                    <th>Apprentissage Critique (Référentiel BUT1)</th>
+                    <th>Preuves / Projets</th>
+                    <th>Niveau</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rt-header">
+                    <td colspan="4">RT1 - Niveau 1 : Assister l’administrateur du réseau</td>
+                </tr>
+            
+                {# AC 11.05 #}
+                <tr>
+                    <td><span class="badge-ac">AC11.05</span></td>
+                    <td>Savoir identifier les dysfonctionnements du réseau local.</td>
+                    <td><a href="https://docs.google.com/document/d/1hjgsC4LPt2Su9jqnobbnHWEEpcOkqwUoKjxH79qj91s/edit?usp=drive_link" target="_blank" class="btn-preuve">
+    preuve
+</a>
+</td>
+                    <td class="stars">★★★☆</td>
+                </tr>
+
+                {# AC 11.06 #}
+                <tr>
+                    <td><span class="badge-ac">AC11.06</span></td>
+                    <td>Installer un poste client et expliquer la procédure.</td>
+                    <td><a href="https://docs.google.com/document/d/163DVFQeLOINDI6rUItSrpxgygIfKmrVi/edit?usp=drive_link&ouid=106987235666399691783&rtpof=true&sd=true" target="_blank" class="btn-preuve">
+            Preuve
+        </a>
+    </td>
+                    <td class="stars">★★★☆</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div style="text-align: center; margin: 50px 0;">
+        <a href="{{ path('app_home') }}" class="bubble" style="font-size: 0.8rem;">← RETOUR À L'ACCUEIL</a>
+    </div>
+{% endblock %}

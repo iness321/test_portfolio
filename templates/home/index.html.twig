@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inass - Portfolio{% endblock %}
+
+{% block body %}
+    {# l'aceuille #}
+    <div class="intro-container">
+        <div style="margin-bottom: 30px;">
+           {# On change .jpeg par .png ici #}
+        <span class="intro-text">Hello! I am</span>
+        <h1>Inass</h1>
+        <span class="intro-text" style="color: var(--rose-vif); opacity: 1;">STUDENT TELECOM NETWORKS </span>
+        
+        <p style="color: var(--rose-medium); font-size: 1.1rem; max-width: 800px; margin: 40px auto; line-height: 1.8; font-weight: 300;">
+            Hi, my name is Inass Atouil. I'm a first-year student in telecommunications networks at the University Institute of Technology (IUT) in Roanne,I am in group A2 and welcome to my website.
+        </p>
+    </div>
+
+    {# navigation rapide le bulles dcp #}
+    <div class="bubble-container">
+        <a href="{{ path('app_competences') }}" class="bubble">My Skills</a>
+        <a href="{{ path('app_cv') }}" class="bubble">My Resume</a>
+        <a href="{{ path('app_contact') }}" class="bubble">Contact Me</a>
+    </div>  
+    <div class="intro-container" style="margin-top: 60px;">
+        <span class="intro-text" style="font-size: 0.8rem; letter-spacing: 5px;">Areas of Interest</span>
+        <div class="bubble-container" style="padding-top: 20px;">
+            <div class="bubble" style="font-size: 0.9rem; padding: 15px 25px;">UX/UI Design</div>
+            <div class="bubble" style="font-size: 0.9rem; padding: 15px 25px;">Cybersecurity</div>
+            <div class="bubble" style="font-size: 0.9rem; padding: 15px 25px;">AI Research</div>
+        </div>
+    </div>
+
+    <div class="intro-container" style="border: 1px solid var(--rose-light); padding: 40px; border-radius: 30px; margin-top: 50px; background: rgba(243, 213, 217, 0.05);">
+    <h2 style="color: var(--rose-light);">Learn More about me</h2>
+    <p style="opacity: 0.8; margin-bottom: 30px;">Discover my hobbies, personal projects, and what drives me every day.</p>
+    <a href="{{ path('app_about_more') }}" class="bubble" style="background: var(--rose-vif);">CLICK HERE</a>
+</div>
+
+    <div style="text-align: center; margin: 80px auto; max-width: 600px;">
+        <p style="color: var(--rose-light); font-size: 1.4rem; font-style: italic; opacity: 0.8;">
+            
+        </p>
+    </div>
+
+   {#bas de la page#}
+    <div style="text-align: center; margin-top: 100px; padding: 50px; background: rgba(0,0,0,0.2); border-radius: 50px 50px 0 0;">
+        <a href="{{ path('app_contact') }}" class="bubble" style="background: var(--rose-vif); color: white;">LET'S TALK</a>
+        <p style="margin-top: 40px; font-size: 0.7rem; opacity: 0.5; letter-spacing: 2px;">© 2026 Inass - BUILT WITH SYMFONY</p>
+    </div>
+{% endblock %}
