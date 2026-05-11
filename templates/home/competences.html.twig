@@ -72,14 +72,37 @@
             color: #FFD700;
             letter-spacing: 2px;
         }
+
+        /* Section Boutons Drive */
+        .drive-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 50px auto;
+            flex-wrap: wrap;
+        }
+        .drive-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(243, 213, 217, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+            backdrop-filter: blur(10px);
+        }
+        .drive-card h2 {
+            color: var(--rose-light);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
     </style>
 
     <div class="intro-container">
-        <span class="intro-text">E-Portfolio / SAE 1.04</span>
+        <span class="intro-text">E-Portfolio / SAE2.PORTFOLIO</span>
         <h1>COMPÉTENCE RT1</h1>
-        <p style="color: var(--rose-medium); margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto;">
-            <strong>Administrer les réseaux et l'Internet</strong> : Focus sur l'installation, la configuration et la maintenance des infrastructures réseaux.
-        </p>
     </div>
 
     <div class="table-container">
@@ -87,8 +110,8 @@
             <thead>
                 <tr>
                     <th>Code AC</th>
-                    <th>Apprentissage Critique (Référentiel BUT1)</th>
-                    <th>Preuves / Projets</th>
+                    <th>Apprentissage Critique</th>
+                    <th>Lien Direct</th>
                     <th>Niveau</th>
                 </tr>
             </thead>
@@ -96,31 +119,34 @@
                 <tr class="rt-header">
                     <td colspan="4">RT1 - Niveau 1 : Assister l’administrateur du réseau</td>
                 </tr>
-            
-                {# AC 11.05 #}
                 <tr>
-                    <td><span class="badge-ac">AC11.05</span></td>
+                    <td><span class="badge-ac">SAE1.02</span></td>
                     <td>Savoir identifier les dysfonctionnements du réseau local.</td>
-                    <td><a href="https://docs.google.com/document/d/1hjgsC4LPt2Su9jqnobbnHWEEpcOkqwUoKjxH79qj91s/edit?usp=drive_link" target="_blank" class="btn-preuve">
-    preuve
-</a>
-</td>
+                    <td>
+                        <a href="https://docs.google.com/document/d/1hjgsC4LPt2Su9jqnobbnHWEEpcOkqwUoKjxH79qj91s/edit?usp=sharing" target="_blank" class="btn-preuve">PREUVE</a>
+                    </td>
                     <td class="stars">★★★☆</td>
                 </tr>
-
-                {# AC 11.06 #}
-                <tr>
-                    <td><span class="badge-ac">AC11.06</span></td>
-                    <td>Installer un poste client et expliquer la procédure.</td>
-                    <td><a href="https://docs.google.com/document/d/163DVFQeLOINDI6rUItSrpxgygIfKmrVi/edit?usp=drive_link&ouid=106987235666399691783&rtpof=true&sd=true" target="_blank" class="btn-preuve">
-            Preuve
-        </a>
-    </td>
-                    <td class="stars">★★★☆</td>
-                </tr>
-
             </tbody>
         </table>
+    </div>
+
+    <div class="drive-section">
+        <div class="drive-card">
+            <h2>Document de Preuve</h2>
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-bottom: 20px;">
+                Contient les captures d'écran, les tests de connectivité et la topologie réseau.
+            </p>
+            <a href="https://docs.google.com/document/d/1hjgsC4LPt2Su9jqnobbnHWEEpcOkqwUoKjxH79qj91s/edit?usp=sharing" target="_blank" class="btn-preuve">CONSULTER LA PREUVE</a>
+        </div>
+
+        <div class="drive-card">
+            <h2>Analyse Réflexive</h2>
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-bottom: 20px;">
+                Retour sur l'expérience, les compétences acquises et le plan d'action futur.
+            </p>
+            <a href="https://docs.google.com/document/d/1hjgsC4LPt2Su9jqnobbnHWEEpcOkqwUoKjxH79qj91s/edit?usp=sharing" target="_blank" class="btn-preuve">CONSULTER L'ANALYSE</a>
+        </div>
     </div>
 
     <div style="text-align: center; margin: 50px 0;">

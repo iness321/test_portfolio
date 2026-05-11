@@ -1,24 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Learn More - Inass{% endblock %}
+{% block title %}En savoir plus sur moi - Inass{% endblock %}
 
 {% block body %}
     <div class="intro-container">
-        <span class="intro-text">Get to know me better</span>
-        <h1>LEARN MORE</h1>
+        <span class="intro-text">Apprenez à mieux me connaître</span>
+        <h1>En savoir plus sur moi</h1>
     </div>
 
     {# Hobbies #}
     <div class="intro-container" style="margin-top: 50px;">
         <span class="intro-text" style="font-size: 0.8rem; letter-spacing: 5px;">My Passions & Hobbies</span>
         <div class="bubble-container">
-            <div class="bubble">Photography</div>
+            <div class="bubble">Photographie</div>
             <div class="bubble">Art</div>
-            <div class="bubble">Travelling</div>
+            <div class="bubble">Voyage</div>
         </div>
         <p style="color: var(--rose-medium); margin-top: 20px;">
-            I am passionate about capturing moments and expressing myself through painting and drawing. 
-            I also spend a lot of time learning new technologies in the R&T field.
+            Je suis passionnée par la capture de moments et l'expression de moi-même à travers la peinture et le dessin. 
+            Je consacre également beaucoup de temps à l'apprentissage des nouvelles technologies dans le domaine R&T.
         </p>
     </div>
 
@@ -50,6 +50,6 @@
 </div>
 
     <div style="text-align: center; margin: 60px 0;">
-        <a href="{{ path('app_home') }}" class="bubble" style="font-size: 0.8rem;">← BACK TO HOME</a>
+        <a href="{{ path('app_home') }}" class="bubble" style="font-size: 0.8rem;">← Retour à l'acceuil</a>
     </div>
 {% endblock %}
